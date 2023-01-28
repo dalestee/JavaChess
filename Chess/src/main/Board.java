@@ -1,7 +1,14 @@
 package main;
 
 public class Board {
-	public static String boardStart;
+
+	public String boardString;
 	
-	public String boardActual;
+	public Board() {
+		this.boardString = "rkbQKbkrpppppppp/32pppppppprkbKQbkr";
+	}
+	
+	public void printBoard() {
+		System.out.println(this.boardString);
+	}
 }

@@ -3,10 +3,10 @@ package main;
 public class Pieces {
 	protected boolean alive;
 	protected int color;
-	protected int[] coordinates;
+	protected int coordinates;
 	protected String name;
 	
-	public void Piece (boolean alive, int color, int[] coordinates, String name) {
+	public void Piece (boolean alive, int color,int coordinates, String name) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -17,7 +17,7 @@ public class Pieces {
 		this.alive = false;
 	}
 	
-	public void changeCoordinates(int[] coordinates) {
+	public void changeCoordinates(int coordinates) {
 		this.coordinates = coordinates;
 	}
 
@@ -27,7 +27,7 @@ class Pawn extends Pieces{
 	
 	private boolean FirstMove;
 	
-	public Pawn (boolean alive, int color, int[] coordinates) {
+	public Pawn (boolean alive, int color, int coordinates) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -38,7 +38,7 @@ class Pawn extends Pieces{
 
 class Knight extends Pieces{
 	
-	public Knight (boolean alive, int color, int[] coordinates) {
+	public Knight (boolean alive, int color, int coordinates) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -48,7 +48,7 @@ class Knight extends Pieces{
 
 class Bishop extends Pieces{
 	
-	public Bishop (boolean alive, int color, int[] coordinates) {
+	public Bishop (boolean alive, int color, int coordinates) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -60,7 +60,7 @@ class King extends Pieces{
 	
 	private boolean FirstMove;
 	
-	public King (boolean alive, int color, int[] coordinates) {
+	public King (boolean alive, int color, int coordinates) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -71,7 +71,7 @@ class King extends Pieces{
 
 class Queen extends Pieces{
 	
-	public Queen (boolean alive, int color, int[] coordinates) {
+	public Queen (boolean alive, int color, int coordinates) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
@@ -83,7 +83,7 @@ class Rook extends Pieces{
 	
 	private boolean FirstMove;
 	
-	public Rook (boolean alive, int color, int[] coordinates, boolean firstMove) {
+	public Rook (boolean alive, int color, int coordinates, boolean firstMove) {
 		this.alive = true;
 		this.color = color;
 		this.coordinates = coordinates;
